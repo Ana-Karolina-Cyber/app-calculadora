@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade400,
+                        color: const Color.fromARGB(255, 143, 143, 143),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(color: Colors.black, width: 1),
                         boxShadow: const [
@@ -78,7 +78,11 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ],
                       ),
-                      child: const Calculadora(),
+                     child: const SizedBox(
+                        width: 300,
+                        height: 500,
+                        child: Calculadora(),
+                      ),
                     ),
                   ),
                   Expanded(
